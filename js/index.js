@@ -1,9 +1,7 @@
-document.getElementById("newTaskFormButton").addEventListener("submit", function() {
-  
-    console.log('Working!');
-    event.preventDefault();
-        newTaskVar.addTask();
-        newTaskVar.render();
-    });
-   
+document.getElementById("newTaskFormButton").addEventListener("click", functionName);
+
+function functionName(){
+    console.log("yes");
+}
+
     
