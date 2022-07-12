@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+
+<div class="container-fluid">
+
+  <div class="row">
+
+    <div class="col-12">
+
+<div class="jumbotron">
+  <h1 class="display-4">Task Manager</h1>
+  <p class="lead">Build a to-do list here!</p>
+  <hr class="my-4">
+  <p>Create a task list for yourself or for your group projects.</p>
+  <a class="btn btn-primary btn-lg" href="#" role="button">Get Started</a>
+</div>
+
+<ul class="nav justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link active" href="#"></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Done</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">In Progress</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled">Stuck</a>
+  </li>
+</ul>
+
+      <div class="container">
+<form>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Task Name</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your task">
+  </div>
+
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Task Description</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter Description for Task"></textarea>
+  </div>
+
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Assigned To</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+  </div>
+
+  <div class="form-group">
+    <label for="date">Date</label>
+    <input type="date" name="date" id="date">
+    <form id="newTaskForm">
+</select>
+      </div>
+
+
+<div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        Status
+        </button>  
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Done</a>
+            <a class="dropdown-item" href="#">Stuck</a>
+            <a class="dropdown-item" href="#">In progress</a>
+        </div>
+    </div>
+
+    <br>
+ 
+  <button type="button" id="newTaskFormButton" class="btn-primary">Submit</button>
+</form>
+      </div>
+
+    </div>
+  </div>
+</div>
+  
+<br>
+  
+<div class="card-group">
+  <div class="card" style="width: 18rem";>
+ 
+    <div class="card-body">
+      <h5 class="card-title">Make a pie</h5>
+      <p class="card-text">Reminder please make a fresh!</p>
+      <p class="card-text">
+        <p class="card-text">
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Status
+            </button>  
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Done</a>
+                <a class="dropdown-item" href="#">Stuck</a>
+                <a class="dropdown-item" href="#">In progress</a>
+            </div>
+        </div>
+     </p>
+      </p>
+      <p class="card-text">Assigned to: Maya</p>
+      <p class="card-text">Due to: June 16th, 2022</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <a href="#" class="btn btn-success">Button</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem";>
+ 
+    <div class="card-body">
+      <h5 class="card-title">Bring some plates</h5>
+      <p class="card-text">Reminder aproximately there are 25 people</p>
+      <p class="card-text">
+        <p class="card-text">
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Status
+            </button>  
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Done</a>
+                <a class="dropdown-item" href="#">Stuck</a>
+                <a class="dropdown-item" href="#">In progress</a>
+            </div>
+        </div>
+     </p>
+      </p>
+      <p class="card-text">Assigned to: Mustafa</p>
+      <p class="card-text">Due to: June 16th, 2022</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem";>
+ 
+    <div class="card-body">
+      <h5 class="card-title">Buy some napkins</h5>
+      <p class="card-text">Reminder: Bring soft textures one</p>
+      <p class="card-text">
+        <p class="card-text">
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Status
+            </button>  
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">To Doe</a>
+                <a class="dropdown-item" href="#">In Progressk</a>
+                <a class="dropdown-item" href="#">Review</a>
+                <a class="dropdown-item" href="#">Done</a>
+            </div>
+        </div>
+     </p>
+      </p>
+      <p class="card-text">Assigned to: Shery</p>
+      <p class="card-text">Due to: June 16th, 2022</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+<a href="#" class="btn btn-success">Button</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem";>
+    <div class="card-body">
+      <h5 class="card-title">Buy chips</h5>
+      <p class="card-text">Reminder:Do not forget the gluten free ones</p>
+      <p class="card-text">
+        <p class="card-text">
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Status
+            </button>  
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Done</a>
+                <a class="dropdown-item" href="#">Stuck</a>
+                <a class="dropdown-item" href="#">In progress</a>
+            </div>
+        </div>
+     </p>
+      </p>
+      <p class="card-text">Assigned to: Jeff</p>
+      <p class="card-text">Due to: June 16th, 2022</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <a href="#" class="btn btn-warning">Button</a>
+    </div>
+   </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<script src=“./js/taskmanager.js”></script>
+<script src=“./js/index.js”></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+
+</html>
