@@ -1,4 +1,4 @@
-createTaskHTML = (name, description, assignedTo, dueDate, status) => {
+createTaskHtml = (name, description, assignedTo, dueDate, status) => {
     const html = `
   <div class="card" style="width: 18rem";>
      <div class="card-body">
@@ -23,7 +23,7 @@ createTaskHTML = (name, description, assignedTo, dueDate, status) => {
     </div>
   </div>
 `
-
+return html;
 // //testing
 //   document.querySelector('#demo').innerHTML = html;
 
@@ -42,11 +42,12 @@ class TaskManager {
             description: document.querySelector("#description").value,
             assignedTo: document.querySelector("#assignedTo").value,
             dueDate: document.querySelector("#dueDate").value,
-            status: 'TODO'
+            status: document.querySelector("#status").value
         };
-    
+            
             this.tasks.push(task);
-            console.log(this.tasks)
+            this.render();
+            
         }
         render() {
           var tasksHtmlList = [];
@@ -71,4 +72,5 @@ class TaskManager {
         
         var newTaskVar = new TaskManager();
         
+
 
